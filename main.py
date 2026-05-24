@@ -3,7 +3,7 @@ import os
 import aiosqlite  # Changed: sqlite3 → aiosqlite
 import tempfile
 # Use temporary directory which should be writable
-DB_PATH = os.path.join(os.path.dirname(__file__), "expenses.db")
+DB_PATH = os.path.join("/tmp", "expenses.db")
 CATEGORIES_PATH = os.path.join(os.path.dirname(__file__), "categories.json")
 
 print(f"Database path: {DB_PATH}")
